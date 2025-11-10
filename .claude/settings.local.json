@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep:*)",
+      "Bash(python process_html.py:*)",
+      "Bash(python extract_css.py:*)",
+      "Bash(python finalize_html.py:*)",
+      "Bash(python -m pip install:*)",
+      "Bash(python beautify_html.py:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

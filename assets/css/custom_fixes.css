@@ -1,0 +1,276 @@
+/* CSS Fixes and Refinements */
+/* Apply these fixes to custom_new.css */
+
+/* Fix 1: Emergency Button - Better sizing for longer text */
+.btn-emergency {
+    background: linear-gradient(135deg, var(--red-accent) 0%, #c82333 100%);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.875rem; /* Smaller font */
+    box-shadow: var(--shadow-md);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+/* Fix 2: Navigation spacing */
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px; /* Reduced from 35px */
+    align-items: center;
+}
+
+/* Fix 3: Logo size adjustment */
+.logo img {
+    height: 60px; /* Reduced from 70px */
+    width: auto;
+}
+
+/* Fix 4: Hero title spacing */
+.hero-title {
+    color: var(--white);
+    font-size: 3rem; /* Reduced from 3.5rem */
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+/* Fix 5: Hero overlay card - better fit */
+.hero-overlay-card {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overlay-text h3 {
+    color: var(--gold-primary);
+    font-size: 1.75rem; /* Reduced from 2rem */
+    margin-bottom: 5px;
+}
+
+.overlay-icon {
+    width: 50px; /* Reduced from 60px */
+    height: 50px;
+    background: var(--gold-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.25rem; /* Reduced from 1.5rem */
+}
+
+/* Fix 6: Service card padding */
+.service-card {
+    background: var(--white);
+    padding: 30px 20px; /* Reduced padding */
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    text-align: center;
+    border-top: 3px solid transparent;
+}
+
+.service-icon {
+    width: 70px; /* Reduced from 80px */
+    height: 70px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-medium) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold-primary);
+    font-size: 1.75rem; /* Reduced from 2rem */
+}
+
+/* Fix 7: Pricing card improvements */
+.pricing-card {
+    background: var(--white);
+    border: 2px solid var(--gray-300);
+    border-radius: 15px;
+    padding: 35px 25px; /* Adjusted padding */
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.pricing-price {
+    font-size: 2.5rem; /* Reduced from 3rem */
+    color: var(--gold-primary);
+    font-weight: 700;
+    margin: 15px 0; /* Adjusted margin */
+}
+
+.pricing-price span {
+    font-size: 1rem; /* Reduced from 1.2rem */
+    color: var(--gray-600);
+    display: block;
+    margin-top: 5px;
+}
+
+/* Fix 8: Why section numbers */
+.why-number {
+    font-size: 3.5rem; /* Reduced from 4rem */
+    font-weight: 700;
+    color: var(--gold-primary);
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+/* Fix 9: Footer spacing */
+.main-footer {
+    background: var(--navy-dark);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 50px 0 25px; /* Reduced from 60px 0 30px */
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 35px; /* Reduced from 40px */
+    margin-bottom: 35px; /* Reduced from 40px */
+}
+
+/* Fix 10: CTA section */
+.cta-section {
+    padding: 60px 0; /* Reduced from 80px */
+    background: var(--gold-primary);
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: var(--navy-dark);
+    margin-bottom: 15px; /* Reduced from 20px */
+    font-size: 2.25rem; /* Added specific size */
+}
+
+.cta-section p {
+    font-size: 1.1rem; /* Reduced from 1.2rem */
+    color: var(--navy-medium);
+    margin-bottom: 25px; /* Reduced from 30px */
+}
+
+/* Fix 11: Button consistency */
+.btn-primary {
+    background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dark) 100%);
+    color: var(--navy-dark);
+    padding: 14px 30px; /* Adjusted from 16px 35px */
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem; /* Reduced from 1.05rem */
+    box-shadow: var(--shadow-lg);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Reduced from 12px */
+    border: 2px solid transparent;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--white);
+    padding: 14px 30px; /* Adjusted from 16px 35px */
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem; /* Reduced from 1.05rem */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Reduced from 12px */
+}
+
+/* Fix 12: Section header spacing */
+.section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px; /* Reduced from 60px */
+}
+
+.section-header h2 {
+    margin-bottom: 12px; /* Reduced from 15px */
+    font-size: 2.25rem; /* Added specific size */
+}
+
+/* Fix 13: Hero features responsive */
+.hero-features {
+    display: flex;
+    gap: 25px; /* Reduced from 30px */
+    flex-wrap: wrap;
+}
+
+.hero-feature {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Reduced from 10px */
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem; /* Reduced from 0.95rem */
+}
+
+/* Fix 14: Pricing features spacing */
+.pricing-features li {
+    padding: 10px 0; /* Reduced from 12px */
+    border-bottom: 1px solid var(--gray-200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Reduced from 10px */
+    font-size: 0.95rem; /* Added specific size */
+}
+
+/* Fix 15: Mobile responsive improvements */
+@media (max-width: 992px) {
+    .main-nav ul {
+        gap: 20px;
+    }
+
+    .btn-emergency {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.25rem;
+    }
+
+    .why-number {
+        font-size: 2.75rem;
+    }
+
+    .pricing-price {
+        font-size: 2rem;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.875rem;
+    }
+
+    .overlay-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .overlay-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
